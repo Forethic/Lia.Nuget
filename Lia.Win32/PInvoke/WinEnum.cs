@@ -7,7 +7,7 @@ namespace Lia.Win32
     /// </summary>
     /// <remarks>
     /// 缩写：GetWindow<br/>
-    /// <see cref="GetWindow.uCmd"/>中的的参数取值
+    /// <see cref="WinApi.GetWindow"/>中的的参数取值
     /// </remarks>
     public enum GW : uint
     {
@@ -18,6 +18,7 @@ namespace Lia.Win32
         /// 如果指定的窗口是最顶层的窗口，则句柄将标识最顶部的窗口<br/>
         /// 如果指定的窗口是顶级窗口，则句柄将标识顶级窗口<br/>
         /// 如果指定的窗口是子窗口，则句柄将标识同级窗口
+        /// </remarks>
         HWNDFIRST = 0,
 
         /// <summary>
@@ -27,6 +28,7 @@ namespace Lia.Win32
         /// 如果指定的窗口是最顶层的窗口，则句柄将标识最顶部的窗口<br/>
         /// 如果指定的窗口是顶级窗口，则句柄将标识顶级窗口<br/>
         /// 如果指定的窗口是子窗口，则句柄将标识同级窗口
+        /// </remarks>  
         HWNDLAST = 1,
 
         /// <summary>
@@ -36,6 +38,7 @@ namespace Lia.Win32
         /// 如果指定的窗口是最顶层的窗口，则句柄将标识最顶部的窗口<br/>
         /// 如果指定的窗口是顶级窗口，则句柄将标识顶级窗口<br/>
         /// 如果指定的窗口是子窗口，则句柄将标识同级窗口
+        /// </remarks>  
         HWNDNEXT = 2,
 
         /// <summary>
@@ -770,7 +773,7 @@ namespace Lia.Win32
         ROOT = 2,
 
         /// <summary>
-        /// 通过走<see cref="WinApi.GetParent/>返回的父窗口和所有者窗口链来检索拥有的根窗口
+        /// 通过走<see cref="WinApi.GetParent"/>返回的父窗口和所有者窗口链来检索拥有的根窗口
         /// </summary>
         ROOTOWNER = 3,
     }

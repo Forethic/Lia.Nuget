@@ -89,6 +89,9 @@ namespace Lia.Win32
         /// </summary>
         public RECT NormalPosition;
 
+        /// <summary>
+        /// 默认值
+        /// </summary>
         public static WINDOWPLACEMENT Default
         {
             get

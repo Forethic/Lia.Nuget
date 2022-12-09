@@ -156,7 +156,7 @@ namespace Lia.Win32
         /// <summary>
         /// 检索指定窗口的边界矩形的尺寸。
         /// </summary>
-        /// <param name="hwnd">指定窗口的句柄</param>
+        /// <param name="hWnd">指定窗口的句柄</param>
         /// <param name="lpRect">指向 RECT 结构的指针，用于接收窗口左上角和右下角的屏幕坐标。</param>
         /// <returns>true:函数执行成功</returns>
         /// <remarks><see cref="GetWindowRect"/>已虚拟化为DPI</remarks>
